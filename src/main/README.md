@@ -57,3 +57,18 @@ The `preload.ts` file is used in Electron applications to expose a limited API t
    - Uses `contextBridge.exposeInMainWorld` to expose the `electronHandler` object to the renderer process under the global variable `electron`.
 
 This setup allows the renderer process to communicate with the main process securely using the defined API, preventing direct access to Node.js and Electron internals.
+
+---
+
+## 4. Util.ts `util.ts`
+The `util.ts` file in your repository contains utility functions. Specifically, it includes a function `resolveHtmlPath` that resolves the path to an HTML file based on the environment.
+
+Here's a detailed explanation of the function:
+
+- **resolveHtmlPath(htmlFileName: string)**
+  - This function takes an HTML file name as an argument.
+  - It checks if the environment is in development mode:
+    - If it is, it constructs a URL pointing to `localhost` with a specified port (default is 1212) and appends the HTML file name to the URL path.
+    - If it is not in development mode, it constructs a file URL pointing to the resolved path of the HTML file within the renderer directory.
+
+This function is useful for determining the correct path to HTML files depending on whether the application is running in development or production mode.
