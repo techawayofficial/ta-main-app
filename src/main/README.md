@@ -1,6 +1,6 @@
 # Core Electron Application
 
-## Main.ts `main.ts`
+## 1. Main.ts `main.ts`
 The `main.ts` file in this repository is used to set up and manage the main process of an Electron application. Here are its key functions:
 
 - **Electron Main Process**: This module runs inside Electron's main process and is responsible for starting the renderer process and handling communication between processes using IPC (Inter-Process Communication).
@@ -15,7 +15,7 @@ This file is compiled to `./src/main.js` using Webpack, optimizing performance f
 
 ---
 
-## Menu.ts `menu.ts`
+## 2. Menu.ts `menu.ts`
 The `menu.ts` file in your repository is used to create and manage the application menu for an Electron application. Here's a breakdown of its key functionalities:
 
 1. **MenuBuilder Class**: This class is responsible for building and setting the application menu.
