@@ -1,6 +1,6 @@
 # Core Electron Application
 
-## `main.ts`
+## Main.ts `main.ts`
 The `main.ts` file in this repository is used to set up and manage the main process of an Electron application. Here are its key functions:
 
 - **Electron Main Process**: This module runs inside Electron's main process and is responsible for starting the renderer process and handling communication between processes using IPC (Inter-Process Communication).
